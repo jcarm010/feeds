@@ -119,6 +119,5 @@ func (f *Feed) WriteJSON(w io.Writer) error {
 	feed := j.JSONFeed()
 
 	e := json.NewEncoder(w)
-	e.SetIndent("", "  ")
 	return e.Encode(feed)
 }
